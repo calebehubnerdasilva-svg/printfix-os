@@ -1,0 +1,2 @@
+import { redirect } from "next/navigation";import { createClient } from "./supabase/server";
+export async function requireCompany(){const supabase=await createClient();const {data:{user}}=await supabase.auth.getUser();if(!user)redirect("/login");const {data:membership}=await supabase.from("company_members").select("company_id,companies(*)").eq("user_id",user.id).limit(1).single();if(!membership)redirect("/onboarding");return {supabase,user,companyId:membership.company_id,company:membership.companies as unknown as {name:string}}}

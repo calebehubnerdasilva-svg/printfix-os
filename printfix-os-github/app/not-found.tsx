@@ -1,0 +1,1 @@
+import Link from"next/link";export default function NotFound(){return <main className="auth card"><h1>Página não encontrada</h1><p className="muted">Este endereço não existe ou foi movido.</p><Link href="/" className="btn">Voltar ao início</Link></main>}

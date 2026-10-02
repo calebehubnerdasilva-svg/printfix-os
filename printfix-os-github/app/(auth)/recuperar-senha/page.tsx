@@ -1,0 +1,1 @@
+import Link from"next/link";import{AuthForm}from"@/components/auth-form";import{recover}from"../actions";export default function Page(){return <main className="auth card"><Link href="/login">← Voltar</Link><h1>Recuperar senha</h1><p className="muted">Enviaremos um link seguro para você.</p><AuthForm action={recover} type="recover"/></main>}

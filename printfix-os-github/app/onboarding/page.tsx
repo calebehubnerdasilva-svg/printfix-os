@@ -1,0 +1,1 @@
+import Link from"next/link";export default function Page(){return <main className="auth card"><h1>Vamos preparar sua empresa</h1><p className="muted">Sua conta existe, mas a empresa ainda não foi criada. Faça login novamente após confirmar seu e-mail; o cadastro cria automaticamente a empresa e o teste de 7 dias.</p><Link href="/login" className="btn">Ir para login</Link></main>}

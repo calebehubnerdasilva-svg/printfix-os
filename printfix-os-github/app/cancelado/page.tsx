@@ -1,0 +1,1 @@
+import Link from"next/link";export default function Page(){return <main className="auth card"><h1>Checkout cancelado</h1><p className="muted">Nenhuma cobrança foi feita.</p><Link className="btn" href="/precos">Ver planos</Link></main>}

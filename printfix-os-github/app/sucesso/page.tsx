@@ -1,0 +1,1 @@
+import Link from"next/link";export default function Page(){return <main className="auth card"><h1>Checkout concluído</h1><p className="muted">Estamos confirmando sua assinatura. A liberação acontece após a confirmação segura do Stripe.</p><Link className="btn" href="/dashboard">Ir ao dashboard</Link></main>}
